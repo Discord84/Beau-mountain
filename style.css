@@ -1,0 +1,423 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech", sans-serif;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-nav {
+    background-color: rgba(5, 193, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid white;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    padding: 41px;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+
+
+.header-background {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 25px;
+    left: 0;
+    
+}
+
+.header-deep-background {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+}
+
+.header-link-active {
+    border-bottom: 3px solid white;
+    padding-bottom: 0;
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 48px;
+    padding-top: 42px;
+    padding-bottom: 20px;
+}
+
+.header-blog {
+    border-left: 1px solid white;
+    position: relative;
+    z-index: 50;
+    margin-top: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 52px;
+    color: rgba(255, 255, 255, 0.7);
+    animation: scales 7s ease-in-out 0s infinite forwards;
+}
+.Beau-mountain {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 235px;
+    /* left: 50%;
+    top: 28%;
+    transform: translate(-50%, -20%); */
+}
+.big {
+    font-weight: 900;
+    font-size: 90px
+}
+
+.header-youtube {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    color: white;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.header-youtube img {
+    width: 24px;
+    height: 24px;
+}
+
+.youtube {
+    margin-left: 3px;
+}
+
+.Today {
+    position: relative;
+    z-index: 50;
+}
+
+.blog-2left {
+    height: 320px;
+    width: 100%;
+    max-width: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(images/blog-first.png) center/cover no-repeat;
+    margin-right: 48px;
+}
+
+.blog-p {
+    backdrop-filter: blur(7px);
+    color: white;
+    padding: 16px 24px;
+    padding-left: 35%;
+    border-radius: 10px;
+}
+
+.blog-left{
+    display: flex;
+
+    padding-left: 170px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.blog-a {
+    color: white;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-left: 32px;
+    font-size: 24px;
+    position: relative;
+    width: fit-content;
+    display: flex;
+}
+
+.blog-a::after {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 10px;
+    background: url(images/Arrow1.png) center/cover no-repeat;
+    bottom: 7px;
+    right: -60px;
+    animation: pulsation 3s linear 0s infinite forwards;
+}
+
+.blog-1right {
+    padding-top: 73px;
+}
+
+.blog0h2 {
+    font-size: 56px;
+    color: white;
+}
+
+.blog0h3 {
+    font-size: 32px;
+    color: cyan;
+    margin-top: 24px;
+    font-weight: 200;
+}
+
+.blog0p {
+    font-size: 18px;
+    color: white;
+    margin-top: 24px;
+}
+
+/* .blog-blur {
+    backdrop-filter: blur(15px);
+} */
+
+.blog-right-a {
+    padding-bottom: 29px;
+    padding-top: 29px;
+    padding-left: 32px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+
+}
+
+.blog-right {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+
+}
+
+.blog-right-a::after {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 10px;
+    top: 40px;
+    left: 120px;
+    background: url(images/Arrow1.png) center/cover no-repeat;
+    z-index: 52;
+    animation: pulsation 3s linear 0s infinite forwards;
+}
+
+.animation-top {
+    display: inline-block;
+    animation: tik-tak 3s ease 0s infinite forwards;
+}
+.animation-bottom {
+    display: inline-block;
+    animation: tik-top 3s ease 0s infinite forwards;
+}
+
+@keyframes pulsation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scales {
+    0% {
+        scale: 1;
+        color: white;
+    }
+    50% {
+        scale: 1.05;
+        color: paleturquoise;
+    }
+    100% {
+        scale: 1;
+        color: white;
+    }
+}
+
+@keyframes tik-tak{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(-3px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes tik-top{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(3px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.today-h2 {
+    color: white;
+    font-size: 72px;
+}
+
+.today-condition {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 40PX;
+}
+
+.today-top-bottom-part{
+    display: flex;
+    margin-top: 40px;
+}
+
+.today-top-left {
+    max-width: 600px;
+    width: 100%;
+}
+.today-top-right {
+    max-width: 600px;
+    width: 100%;
+}
+
+.today-weather {
+    color: white;
+    font-size: 40px;
+}
+
+.today-weather-container {
+    display: flex;
+}
+
+.today-top{
+    margin-top: 273px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.today-top-right-h3 {
+    color: white;
+    font-size: 40px;
+    padding: 24px 48px;
+}
+
+.today-here-only-h3 {
+    background-color: #11327B;
+}
+
+.today-top-right-bottom-part {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 24px 28px;
+}
+
+.today-open-today {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+}
+
+.time-when-open {
+    font-size: 40px;
+    color: white;
+    margin-top: 14px;
+}
+
+.schedule-free-sample {
+    display: block;
+    position: relative;
+    color: cyan;
+    font-size: 24px;
+    margin-top: 72px;
+}
+
+.schedule-free-sample::after {
+    position: absolute;
+    content: "";
+    width: 47px;
+    height: 10px;
+    top: 10px;
+    left: 120px;
+    background: url(images/Arrow1.png) center/cover no-repeat;
+    z-index: 52;
+    animation: pulsation 3s linear 0s infinite forwards;
+}
+
+.Greeny {
+    color: black;
+    font-size: 40px;
+    background-color: rgba(42, 239, 132, 1);
+    border-radius: 60%;
+    width: fit-content;
+    padding: 16px 34px;
+}
+
+.Greeny-dady {
+    max-width: 800px;
+    width: 100%;
+}
+
+.greeny-goyda {
+    display: flex;
+    align-items: center;
+}
+
+.greeny-forecast {
+    color: white;
+    font-size: 40px;
+    margin-left: 24px;
+}
+
+.today-bottom {
+    background-color: rgba(2, 14, 32, 1);
+}
+.Day {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 32px;
+}
+
+.mapka {
+    background: url(images/map.png) ;
+    max-width: 779px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 500px 300px;
+}
+
