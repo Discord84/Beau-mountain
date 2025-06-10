@@ -409,6 +409,7 @@
     background: rgba(2, 14, 32, 1);
     position: relative;
     height: 100%;
+    margin-top: -1px;
 }
 .Day {
     color: rgba(255, 255, 255, 0.6);
@@ -551,6 +552,7 @@ main {
 .cool-swiper {
     background: rgba(2, 14, 32, 1);
     padding-top: 200px;
+    margin-top: -1px;
 }
 
 .swiper-texts {
@@ -565,4 +567,42 @@ main {
 .swiper-h2 {
     font-size: 72px;
     color: white;
+}
+
+.swiper-txt {
+    color: white;
+    font-size: 36px;
+}
+
+.swiper-a {
+    color: cyan;
+    text-decoration: none;
+    position: relative;
+}
+.swiper-a::after {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 10px;
+    top: 17px;
+    left: 156px;
+    background: url(images/arrow2.svg) center/cover no-repeat;
+    stroke: cyan;
+    z-index: 52;
+    animation: pulsation 3s linear 0s infinite forwards;
+}
+
+.beuau-mountain {
+    background: url(images/main-mountaiun.png) no-repeat;
+    height: 1000px;
+    margin-top: -1px;
+}
+
+.absolute-card {
+    position: absolute;
+    top: 320px;
+}
+
+.relative-of-absolute-card {
+    position: relative;
 }
